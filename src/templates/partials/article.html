@@ -1,0 +1,36 @@
+{% for item in articles %}
+<article class="article">
+    <div class="article__image">
+        <img src="{{mainimage}}">
+    </div>
+    <div class="content">
+        <span>
+        <a class="content__i-do-ref" href="#">I Do Travel</a>
+    </span>
+        <div class="content__date">{{item.date}}</div>
+        <h1 class="content__header">{{item.header}}</h1>
+        <hr class="content__hr">
+        <div class="content__aside-image">
+            <img src="{{item.asideimage}}">
+        </div>
+        {% for words in item.texttest %}
+        {% if words.style == "simple" %}
+        <div class="content__text content__text_theme_simple">{{words.text}}</div>
+        {% endif %}
+        {% if words.style == "italic" %}
+        <div class="content__text content__text_theme_italic">{{words.text}}</div>
+        {% endif %}
+        {% if words.style == "blockquote" %}
+        <div class="content__text content__text_theme_blockquote">{{words.text}}</div>
+        {% endif %}
+        {% endfor %}
+    
+        <span><a class="content__read-more-ref" href="#">read more</a></span>
+        <ul class="hashtags">
+            <li class="hashtags__item"><a class="hashtags__item-ref" href="#">{{item.hashtags[0]}}</a></li>
+            <li class="hashtags__item"><a class="hashtags__item-ref" href="#">{{item.hashtags[1]}}</a></li>
+            <li class="hashtags__item"><a class="hashtags__item-ref" href="#">{{item.hashtags[2]}}</a></li>
+        </ul>
+    </div>
+</article>
+{% endfor %}

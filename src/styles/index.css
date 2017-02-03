@@ -1,0 +1,218 @@
+body {
+  position: relative;
+}
+.main {
+  margin: 0 auto;
+  width: 952px;
+}
+.container {
+     margin-bottom: 100px;
+}
+.content {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 25px 0.00px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.content__i-do-ref {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 20px;
+    background-color: #5c6bc0;
+    color: #ffffff;
+    float: right;
+    position: absolute;
+    right: -10px;
+}
+.content__i-do-ref:hover {
+    background: #6B78C5;
+    padding: 12px 22px;
+}
+.content__i-do-ref:active {
+    background: #525FAB;
+}
+.content__date {
+    font-family: 'Lato', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: #bdbdbd;
+    font-weight: 700;
+}
+.content__header {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    color: #000000;
+    font-weight: 700;
+}
+.content__hr {
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.content__text {
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.content__text_theme_simple {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+	line-height: 1.8;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+}
+.content__text_theme_italic {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.5);
+    font-style: italic;
+    font-weight: normal;
+}
+.content__text_theme_blockquote {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+    border-left: 2px solid rgba(0, 0, 0, 0.4);
+    padding-left: 20px;
+}
+.content__read-more-ref {
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    color: #5c6bc0;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 25px;
+}
+.content__read-more-ref:hover {
+    border: 1px solid;
+    padding: 14px 24px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.content__read-more-ref:active {
+    border: 1px solid;
+     padding: 14px 24px;
+    border-color: blue;
+}
+.content__header-с {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    color: #000000;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.hashtags {
+    margin: 0;
+    float: right;
+}
+.hashtags__item {
+    display: inline;
+    margin-left: 5px;
+}
+.hashtags__item-ref {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+}
+.hashtags__item-ref:hover {
+    color: blue;
+    text-decoration: underline;
+}
+.hashtags__item-ref:active {
+    color: blue;
+}
+.content__aside-image {
+    float: left;
+}
+@media screen and (max-width : 1024px) {
+	.image {
+		width: auto;
+		height: 569px;
+	}
+	body {
+		width: 100%;
+	}
+	.main {
+		width: auto;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+@media screen and (max-width : 768px) {
+
+	.image {
+		height: 410px;
+	}
+	.content {
+		padding-top: 20px;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 30px;
+	}
+	.content__date {
+    	padding-top: 20px;
+    	padding-bottom: 10px;
+    	font-size: 14px;
+	}
+	.content__header {
+    	font-size: 25px;
+    	font-weight: 700;
+	}
+	.content__text {
+    	padding-bottom: 0px;
+	}
+}
+@media screen and (max-width : 480px) {
+	.image {
+		height: 253px;
+	}
+	.content__i-do-ref {
+    	right: 0px;
+		top: 0px;
+	}
+	.content__read-more-ref {
+    	font-size: 21px;
+		padding: 0;
+	}
+	.content__read-more-ref:hover {
+    	border: 1px solid;
+    	padding: 0;
+	}
+	.content__read-more-ref:active {
+    	border: 1px solid;
+     	padding: 0;
+    	border-color: blue;
+	}
+	.hashtags {
+		margin-top: 15px;
+    	margin-bottom: 10px;
+		margin-left: -40px;
+		float: none;
+	}
+	.hashtags__item {
+		padding-left: 0;
+    	margin-left: 0;
+	}
+}
+@media screen and (max-width : 425px) {
+	.image {
+		height: 216px;
+	}
+}
+@media screen and (max-width : 375px) {
+	.image {
+		height: 189px;
+	}
+}
+@media screen and (max-width : 320px) {
+	.image {
+		height: 157px;
+	}
+}
